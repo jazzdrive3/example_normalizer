@@ -1,0 +1,7 @@
+services:
+  serializer.normalizer.formatted_text.example_normalizer:
+    class: Drupal\example_normalizer\Normalizer\FormattedTextNormalizer
+    tags:
+      # Give it a priority higher than the default jsonapi service
+      # serializer.normalizer.field_item.jsonapi
+      - { name: normalizer, priority: 22 }
