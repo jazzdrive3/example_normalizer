@@ -1,0 +1,6 @@
+name: Example Normalizer
+description: A module to demonstrate a custom normalizer.
+type: module
+core: '8.x'
+dependencies:
+  - jsonapi
